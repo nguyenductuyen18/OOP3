@@ -10,7 +10,8 @@ public class Client1 {
         String IP = "127.0.0.1";
         DatagramSocket datagramSocket = new DatagramSocket();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("nhapgiatri 1 va 2 ");
+//        System.out.println("nhapgiatri 1 va 2 ");
+        System.out.println("number  ");
         String message = scanner.nextLine();
         byte[] bytes =message.getBytes();
         InetAddress inetAddress = InetAddress.getByName(IP);

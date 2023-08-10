@@ -18,6 +18,10 @@ public class Client {
             InetAddress inetAddress = InetAddress.getByName(IP);
             DatagramPacket datagramPacket = new DatagramPacket(bytes, bytes.length, inetAddress, portServer);
             datagramSocket.send(datagramPacket);
+            if("exit".equalsIgnoreCase(messageClient)){
+                datagramSocket.close();
+            }
+
 
 
             byte[] bytes1 = new byte[1024];
